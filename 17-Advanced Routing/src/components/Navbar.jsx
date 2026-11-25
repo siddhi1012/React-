@@ -1,0 +1,18 @@
+import React from 'react'
+import {Link} from 'react-router-dom'
+
+
+const Navbar = () => {
+    return (
+        <div className='flex items-center py-3 px-8 bg-cyan-600 justify-between'>
+            <h2 className='text-2xl font-bold'>Lemon</h2>
+            <div className='flex gap-10'>
+               <Link to='/' className='text-lg font-medium'>Home</Link>
+               <Link to='/about' className='text-lg font-medium'>About</Link>
+               <Link to='/product' className='text-lg font-medium'>Product</Link>
+            </div>
+        </div>
+    )
+}
+
+export default Navbar
